@@ -7,9 +7,9 @@
 <html lang="pl">
 	<head>
 		<title>Piafol | Opakowania foliowe i worki foliowe | Budzyń</title>
-		<link rel="icon" type="image/png" sizes="32x32" href="images/icons/aluminium-paper.png">
+		<link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Piafol z Budzynia produkuje i sprzedaje worki foliowe, worki do segregacji, folie stretch, reklamówki oraz opakowania foliowe dla firm i gastronomii. Zamów online na Allegro." />
 		<meta name="author" content="Piafol Piotr Anastaziak" />
 		<meta name="theme-color" content="#087f8c" />
@@ -31,7 +31,7 @@
 			"description": "Producent i sprzedawca opakowań foliowych, worków foliowych oraz folii stretch.",
 			"image": "images/logo.png",
 			"telephone": "+48 67 28 43 138",
-			"email": "piafol@interia.pl",
+			"email": "piafol_kontakt@piafol.pl",
 			"address": {
 				"@type": "PostalAddress",
 				"streetAddress": "Osiedle Zielone 3",
@@ -44,19 +44,16 @@
 				"latitude": 52.884751,
 				"longitude": 16.979308
 			},
-			"areaServed": ["Budzyń", "Poznań", "Wielkopolska"],
-			"hasOfferCatalog": {
-				"@type": "OfferCatalog",
-				"name": "Opakowania foliowe Piafol",
-				"itemListElement": [
-					{ "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Worki foliowe" } },
-					{ "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Worki do segregacji odpadów" } },
-					{ "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Folie stretch" } },
-									{ "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Reklamówki i woreczki foliowe" } },
-									{ "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Worki foliowe do węgla" } },
-									{ "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Worki na pellet" } }
-				]
-			},
+			"areaServed": "PL",
+			"knowsAbout": [
+				"Worki foliowe",
+				"Worki do segregacji odpadów",
+				"Folie stretch",
+				"Reklamówki i woreczki foliowe",
+				"Worki foliowe do węgla",
+				"Worki na pellet",
+				"Produkcja opakowań foliowych dla firm"
+			],
 			"mainEntity": [
 				{
 					"@type": "Question",
@@ -77,6 +74,8 @@
 			"sameAs": "https://allegro.pl/uzytkownik/Piafol"
 		}
 		</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKPZFCHNE"></script>
+	<script src="assets/js/analytics.js"></script>
 	</head>
 	<body class="homepage">
 		<div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
@@ -86,7 +85,7 @@
 				<section id="header">
 
 					<!-- Logo -->
-						<div class="site-logo"><a href="index.html"><img src="images/logo.png" alt="Piafol - producent opakowań foliowych" width="300" height="100"></a></div>
+						<div class="site-logo"><a href="index.html"><picture><source type="image/webp" srcset="images/optimized/logo-800.webp 800w, images/optimized/logo-1600.webp 1600w" sizes="220px"><img src="images/logo.png" alt="Piafol - producent opakowań foliowych" width="1200" height="401"></picture></a></div>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -94,6 +93,7 @@
 								<li class="current"><a href="index.html">Główna</a></li>
 								<li><a href="#Produkty">Produkty</a></li>
 								<li><a href="#DlaFirm">Dla firm</a></li>
+								<li><a href="produkcja-workow-foliowych-na-zamowienie.html">Produkcja na wymiar</a></li>
 								<li><a href="poradnik.html">Poradnik</a></li>
 								<li><a href="#Kontakt">Kontakt</a></li>
 								<li><a href="#Onas">O nas</a></li>
@@ -102,7 +102,7 @@
 
 					<!-- Banner -->
 						<section id="banner">
-							<div class="banner-image" aria-hidden="true"><picture><source type="image/webp" srcset="images/optimized/torba-800.webp 800w, images/optimized/torba-1600.webp 1600w" sizes="100vw"><img src="images/torba.jpg" alt="" width="5184" height="2404"></picture></div>
+							<div class="banner-image" aria-hidden="true"><picture><source type="image/webp" srcset="images/optimized/torba-800.webp 800w, images/optimized/torba-1600.webp 1600w" sizes="100vw"><img src="images/torba.jpg" alt="" width="5184" height="2404" fetchpriority="high" decoding="async"></picture></div>
 							<header>
 								<h1>Producent opakowań foliowych</h1>
 								<p>Produkujemy wyroby foliowe od ponad 20 lat.</p>
@@ -162,35 +162,35 @@
 						<button class="carousel-button carousel-button-prev" type="button" aria-label="Poprzednie produkty" data-carousel-prev>
 							<span aria-hidden="true">&#8592;</span>
 						</button>
-						<div class="products-track" role="list" tabindex="0" aria-label="Lista produktów" data-products-track>
-							<article class="product-card" role="listitem" data-category="przemyslowe pakowanie">
+						<div class="products-track" tabindex="0" aria-label="Lista produktów" data-products-track>
+							<article class="product-card" data-category="przemyslowe pakowanie">
 								<a class="product-card-link" href="kaptury-foliowe-na-palety.html"><picture><source type="image/webp" srcset="images/optimized/products/KAPTUR-foliowy-na-PALETA-SKRZYNIA-BIG-BAG-slomka-1200-2x600x2200-10szt-800.webp 800w, images/optimized/products/KAPTUR-foliowy-na-PALETA-SKRZYNIA-BIG-BAG-slomka-1200-2x600x2200-10szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/KAPTUR-foliowy-na-PALETA-SKRZYNIA-BIG-BAG-slomka-1200-2x600x2200-10szt.jpg" alt="Kaptur foliowy na paletę i skrzynię typu Big Bag" width="420" height="210" loading="eager" decoding="async"></picture><h3>Kaptur foliowy na paletę</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="pakowanie">
-								<a class="product-card-link" href="reklamowki-i-woreczki.html"><picture><source type="image/webp" srcset="images/optimized/products/MOCNA-reklamowka-25-5-45cm-WYTRZYMALA-KOLOR-120szt-800.webp 800w, images/optimized/products/MOCNA-reklamowka-25-5-45cm-WYTRZYMALA-KOLOR-120szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/MOCNA-reklamowka-25-5-45cm-WYTRZYMALA-KOLOR-120szt.jpg" alt="Mocne wytrzymałe reklamówki foliowe" width="420" height="210" loading="eager" decoding="async"></picture><h3>Mocne reklamówki</h3></a>
+							<article class="product-card" data-category="pakowanie">
+								<a class="product-card-link" href="reklamowki-i-woreczki.html"><picture><source type="image/webp" srcset="images/optimized/products/MOCNA-reklamowka-25-5-45cm-WYTRZYMALA-KOLOR-120szt-800.webp 800w, images/optimized/products/MOCNA-reklamowka-25-5-45cm-WYTRZYMALA-KOLOR-120szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/MOCNA-reklamowka-25-5-45cm-WYTRZYMALA-KOLOR-120szt.jpg" alt="Mocne wytrzymałe reklamówki foliowe" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Mocne reklamówki</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="budowlane">
-								<a class="product-card-link" href="worki-budowlane.html"><picture><source type="image/webp" srcset="images/optimized/products/Ogromne-worki-budowlane-do-styropianu-840L-10szt-800.webp 800w, images/optimized/products/Ogromne-worki-budowlane-do-styropianu-840L-10szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/Ogromne-worki-budowlane-do-styropianu-840L-10szt.jpg" alt="Duże worki budowlane 840 litrów" width="420" height="210" loading="eager" decoding="async"></picture><h3>Worki budowlane 840 l</h3></a>
+							<article class="product-card" data-category="budowlane">
+								<a class="product-card-link" href="worki-budowlane.html"><picture><source type="image/webp" srcset="images/optimized/products/Ogromne-worki-budowlane-do-styropianu-840L-10szt-800.webp 800w, images/optimized/products/Ogromne-worki-budowlane-do-styropianu-840L-10szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/Ogromne-worki-budowlane-do-styropianu-840L-10szt.jpg" alt="Duże worki budowlane 840 litrów" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Worki budowlane 840 l</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="pakowanie">
+							<article class="product-card" data-category="pakowanie">
 								<a class="product-card-link" href="reklamowki-i-woreczki.html"><picture><source type="image/webp" srcset="images/optimized/products/WORECZKI-180x250-100szt-800.webp 800w, images/optimized/products/WORECZKI-180x250-100szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/WORECZKI-180x250-100szt.jpg" alt="Woreczki foliowe 180 x 250 mm" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Woreczki 180 x 250 mm</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="przemyslowe">
+							<article class="product-card" data-category="przemyslowe">
 								<a class="product-card-link" href="worki-do-odciagu-trocin.html"><picture><source type="image/webp" srcset="images/optimized/products/WORKI%20DO%20ODCI%C4%84GU%20TROCIN__1000x1400_150%20MIKR_20%20SZTZrzut%20ekranu%202026-02-14%20080356-800.webp 800w, images/optimized/products/WORKI%20DO%20ODCI%C4%84GU%20TROCIN__1000x1400_150%20MIKR_20%20SZTZrzut%20ekranu%202026-02-14%20080356-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/WORKI DO ODCIĄGU TROCIN__1000x1400_150 MIKR_20 SZTZrzut ekranu 2026-02-14 080356.png" alt="Worki foliowe do odciągu trocin" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Worki do odciągu trocin</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="przemyslowe">
+							<article class="product-card" data-category="przemyslowe">
 								<a class="product-card-link" href="worki-na-opony.html"><picture><source type="image/webp" srcset="images/optimized/products/WORKI%20DO%20OPON%20NA%20OPONY%20BIA%C5%81E%20250%20SZT__B%20OD%20PRODUCENTA-800.webp 800w, images/optimized/products/WORKI%20DO%20OPON%20NA%20OPONY%20BIA%C5%81E%20250%20SZT__B%20OD%20PRODUCENTA-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/WORKI DO OPON NA OPONY BIAŁE 250 SZT__B OD PRODUCENTA.png" alt="Białe worki foliowe na opony" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Worki na opony</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="pakowanie">
+							<article class="product-card" data-category="pakowanie">
 								<a class="product-card-link" href="worki-do-wegla.html"><picture><source type="image/webp" srcset="images/optimized/products/WORKI%20FOLIOWE%20DO%20W%C4%98GLA%20500x800_100SZT_120MIKR_BIA%C5%81E-800.webp 800w, images/optimized/products/WORKI%20FOLIOWE%20DO%20W%C4%98GLA%20500x800_100SZT_120MIKR_BIA%C5%81E-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/WORKI FOLIOWE DO WĘGLA 500x800_100SZT_120MIKR_BIAŁE.png" alt="Białe worki foliowe do pakowania węgla 25 kg" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Worki do węgla 25 kg</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="pakowanie">
+							<article class="product-card" data-category="pakowanie">
 								<a class="product-card-link" href="worki-na-pellet.html"><picture><source type="image/webp" srcset="images/optimized/products/Worki%20na%20Pellet%20450x750%20PRODUCENT-800.webp 800w, images/optimized/products/Worki%20na%20Pellet%20450x750%20PRODUCENT-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/Worki na Pellet 450x750 PRODUCENT.png" alt="Przezroczyste worki na pellet 15 kg" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Worki na pellet 15 kg</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="segregacja">
+							<article class="product-card" data-category="segregacja">
 								<a class="product-card-link" href="worki-do-segregacji-odpadow.html"><picture><source type="image/webp" srcset="images/optimized/products/Worki-do-odpadow-BIO-do-SEGREGACJI-BRAZ-120l-25-szt-800.webp 800w, images/optimized/products/Worki-do-odpadow-BIO-do-SEGREGACJI-BRAZ-120l-25-szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/Worki-do-odpadow-BIO-do-SEGREGACJI-BRAZ-120l-25-szt.jpg" alt="Brązowe worki BIO do segregacji odpadów 120 litrów" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Worki BIO 120 l</h3></a>
 							</article>
-							<article class="product-card" role="listitem" data-category="segregacja">
+							<article class="product-card" data-category="segregacja">
 								<a class="product-card-link" href="worki-do-segregacji-odpadow.html"><picture><source type="image/webp" srcset="images/optimized/products/Worki-na-PAPIER-do-SEGREGACJI-NIEBIESKI-120l-25-szt-800.webp 800w, images/optimized/products/Worki-na-PAPIER-do-SEGREGACJI-NIEBIESKI-120l-25-szt-1600.webp 1600w" sizes="(max-width: 520px) 82vw, 28vw"><img src="images/products/Worki-na-PAPIER-do-SEGREGACJI-NIEBIESKI-120l-25-szt.jpg" alt="Niebieskie worki na papier do segregacji 120 litrów" width="420" height="210" loading="lazy" decoding="async"></picture><h3>Worki na papier 120 l</h3></a>
 							</article>
 						</div>
@@ -213,12 +213,17 @@
 								<p>W ofercie znajdują się worki foliowe, worki budowlane, worki do segregacji odpadów BIO i papieru, worki na opony, worki do odciągu trocin, reklamówki, woreczki oraz folie do zabezpieczania palet. Dobieramy rozmiar i rodzaj opakowania do realnych potrzeb zamówienia.</p>
 							</div>
 							<div>
-								<h3>Zamówienia dla klientów z Wielkopolski</h3>
-								<p>Obsługujemy klientów z Budzynia, Poznania i całej Wielkopolski. Produkty Piafol można zamówić online przez Allegro, a przy indywidualnych potrzebach skontaktować się z nami bezpośrednio.</p>
+								<h3>Zamówienia na terenie całej Polski</h3>
+								<p>Obsługujemy klientów z całej Polski. Produkty Piafol można zamówić online przez Allegro, a przy większych ilościach lub indywidualnych potrzebach skontaktować się z nami bezpośrednio.</p>
 								<a class="text-link" href="#Kontakt">Zapytaj o produkt <span aria-hidden="true">&#8594;</span></a>
+							</div>
+							<div>
+								<h3>Dostawa i logistyka</h3>
+								<p>Dostawy realizujemy na terenie całego kraju, dobierając sposób wysyłki do rodzaju i wielkości zamówienia: kurierem, spedycją paletową, a przy ustalonych zleceniach także transportem własnym.</p>
 							</div>
 						</div>
 						<nav class="category-links" aria-label="Kategorie produktów">
+							<a href="produkcja-workow-foliowych-na-zamowienie.html">Produkcja worków na zamówienie <span aria-hidden="true">&#8594;</span></a>
 							<a href="worki-do-segregacji-odpadow.html">Worki do segregacji odpadów <span aria-hidden="true">&#8594;</span></a>
 							<a href="worki-budowlane.html">Worki budowlane <span aria-hidden="true">&#8594;</span></a>
 							<a href="worki-na-opony.html">Worki na opony <span aria-hidden="true">&#8594;</span></a>
@@ -246,10 +251,15 @@
 							<ul class="business-points">
 								<li>oferta dla sklepów, magazynów, produkcji i gastronomii</li>
 								<li>worki foliowe, reklamówki, folie i opakowania na zamówienie</li>
-								<li>obsługa klientów z Budzynia, Poznania i Wielkopolski</li>
+								<li>realizacja zamówień dla klientów z całej Polski</li>
 							</ul>
+							<a class="button" href="produkcja-workow-foliowych-na-zamowienie.html">Zobacz produkcję na zamówienie</a>
 						</div>
-						<form class="inquiry-form" action="mailto:piafol@interia.pl" method="post" enctype="text/plain">
+						<form class="inquiry-form" action="contact.php" method="post">
+							<div class="form-trap" aria-hidden="true" hidden style="display:none !important;">
+								<label for="website">Nie wypelniaj tego pola</label>
+								<input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+							</div>
 							<h3>Zapytaj o ofertę</h3>
 							<label for="company">Firma <span>(opcjonalnie)</span></label>
 							<input id="company" name="Firma" type="text" autocomplete="organization">
@@ -304,7 +314,7 @@
 			</section>
 
 			<!-- Main -->
-				<section id="main">
+								<section id="main" role="main">
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
@@ -368,7 +378,6 @@
 																<p>
 																	Jesteśmy dumni, że nasi klienci doceniają naszą jakość i profesjonalizm. Na Allegro zdobyliśmy najwyższe oceny, co jest dla nas najlepszym potwierdzeniem satysfakcji naszych klientów. Dziękujemy za zaufanie i zapewniamy, że nadal będziemy dostarczać usługi na najwyższym poziomie.
 																</p>
-																<h3><a href="#"></a></h3>
 															</article>
 						
 													</div>
@@ -419,7 +428,7 @@
 												<ul class="contact-list">
 													<li>Telefon: <a href="tel:+48672843138">67 28 43 138</a></li>
 													<li>Kom: <a href="tel:+48600133897">600 133 897</a></li>
-													<li>E-mail: <a href="mailto:piafol@interia.pl">piafol@interia.pl</a></li>
+																																<li>E-mail: <a href="mailto:piafol_kontakt@piafol.pl">piafol_kontakt@piafol.pl</a></li>
 												</ul>
 											</section>
 										</aside>

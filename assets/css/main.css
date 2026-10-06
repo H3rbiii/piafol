@@ -42,7 +42,8 @@ img { display: block; max-width: 100%; }
 
 #header { background: var(--surface); border-bottom: 1px solid rgba(219, 229, 231, .8); }
 #header > .site-logo { padding: 32px 24px 22px; text-align: center; }
-#header > .site-logo img { width: 220px; height: auto; margin: 0 auto; }
+#header > .site-logo picture { display: block; width: 220px; aspect-ratio: 1200 / 401; margin: 0 auto; }
+#header > .site-logo img { width: 100%; height: 100%; object-fit: contain; }
 #nav { border-top: 1px solid #edf2f2; text-align: center; }
 #nav ul { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 0; padding: 10px 24px; list-style: none; }
 #nav a { display: block; padding: 8px 18px; border-radius: 999px; color: var(--muted); font-weight: 600; }
@@ -120,6 +121,7 @@ img { display: block; max-width: 100%; }
 .business-points li { position: relative; padding-left: 24px; }
 .business-points li::before { position: absolute; left: 0; color: var(--accent); content: '\2022'; font-weight: 700; }
 .inquiry-form { display: grid; gap: 8px; padding: 28px; background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); }
+.form-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .inquiry-form h3 { margin-bottom: 8px; }
 .inquiry-form label { color: var(--ink); font-size: .9rem; font-weight: 700; }
 .inquiry-form label span { color: var(--muted); font-weight: 400; }
@@ -250,7 +252,7 @@ ul.divided li::before { position: absolute; left: 0; color: var(--accent); conte
 @media (max-width: 520px) {
 	body { font-size: 15px; }
 	#header > .site-logo { padding: 24px 16px 16px; }
-	#header > .site-logo img { width: 180px; }
+	#header > .site-logo picture { width: 180px; }
 	#nav ul { gap: 0; padding: 8px; }
 	#nav a { padding: 7px 12px; font-size: .9rem; }
 	#banner { min-height: 285px; padding: 48px 20px; }

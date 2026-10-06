@@ -1,0 +1,7 @@
+contact-config.php
+contact-config.local.php
+private/
+repomix-output.xml
+.env
+.env.*
+!.env.example
