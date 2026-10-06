@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://piafol.pl/sitemap.xml
